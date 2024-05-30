@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authentique Cafe Home Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <div class="banner">
+    <video class="video" src="./Images/video_preview_h264.mp4" autoplay muted loop></video>
+    <div class="nav">
+      <div class="links">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="welcome welcome2">
+       <img src="./Images/Designer (1).jpeg" alt="logo for cafe">
+       <h6><i>Welcome to paradise</i></h6>
+      <h1><i><span>Authentique</span> Menu</i></h1>
+      <!-- <p><i>Made for memories</i></p> -->
+    </div>
+    </div>
+      
+    <div class="info navigation">
+<div class="nav-menu">
+    <ul>
+      <li><a href="index.html">BREAKFAST</a></li>
+      <li><a href="menu.html">BEVERAGES</a></li>
+      <li><a href="contact.html">DESSERTS</a></li>
+      <li><a href="contact.html">MAIN MENU</a></li>
+      <li><a href="contact.html">SPECIALS</a></li>
+    </ul>
+    <div class="nav-pic">
+      <img src="./Images/bundo-kim-aGuyksW6l_Y-unsplash.jpg" alt="">
+    </div>
+  
+</div>
+    </div>
+    <div class="info-menu">
+      <h1>BREAKFAST</h1>
+      <br>
+      <div class="menu">
+        <img src="./Images/menu5.jpg" alt="">
+      </div>
+      <div class="menu">
+        <img src="./Images/menu6.jpg" alt="">
+      </div>
+      <div class="menu">
+        <img src="./Images/menu7.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="info-menu">
+      <h1>BEVERAGES</h1>
+      <br>
+      <div class="menu">
+        <img src="./Images/kari-shea-pJn9WhMqFIs-unsplash.jpg" alt="">
+      </div>
+      <div class="menu">
+        <img src="./Images/shreyak-singh-cqCvf25qKDU-unsplash.jpg" alt="">
+      </div>
+      <div class="menu">
+        <img src="./Images/dimaz-fakhruddin-kba8ZLNwL-8-unsplash.jpg" alt="">
+      </div>
+       
+    </div>
+   
+   <div class="swiper mySwiper">
+    <div class="info-menu">
+      <h1>DESSERTS</h1>
+      <br>
+      <div class="menu">
+        <img src="./Images/henry-co-nMQY_xvzl6w-unsplash.jpg" alt="">
+      </div>
+      <div class="menu">
+        <img src="./Images/menu8.jpg" alt="">
+      </div>
+      <div class="menu">
+        <img src="./Images/menu12.jpg" alt="">
+      </div>
+    </div>
+    
+    <div class="info-menu">
+      <h1>MAIN MENU</h1>
+      <br>
+      <div class="menu">
+        <img src="./Images/menu9.jpg" alt="">
+      </div>
+      <div class="menu">
+        <img src="./Images/menu11.jpg" alt="">
+      </div>
+      <div class="menu">
+        <img src="./Images/pablo-merchan-montes-dc_JMu8lb5U-unsplash.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="info-menu">
+      <h1>SPECIALS</h1>
+      <br>
+      <div class="menu">
+      </div>
+      <div class="menu">
+      </div>
+      <div class="menu">
+      </div>
+    </div>
+   </div>
+  </main>
+  
+  <footer>
+    <img src="./Images/instagram-svgrepo-com.svg" alt="">
+    <p>#AUTHENTIQUE</p>
+
+    <img src="./Images/facebook-176-svgrepo-com.svg" alt="">
+    <p>#AUTHENTIQUE</p>
+
+    <img src="./Images/twitter-3-svgrepo-com.svg" alt="">
+    <p>#AUTHENTIQUE</p>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var info = new info(".navigation", {
+      effect: "coverflow",
+      loop: true,
+      grabCursor: true,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+</body>
+</html>
