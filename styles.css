@@ -19,7 +19,6 @@ body{
 }
 
 .video{
-  border: 7px solid rgb(255, 0, 195);
   position: absolute;
   width: 100% !important;
   height: 100% !important;
@@ -28,7 +27,6 @@ body{
   opacity: 0.2;
 
 }
-
 
 .nav{
   /* border: 1px solid #fff; */
@@ -40,14 +38,12 @@ body{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  /* border-radius: 20px; */
 }
 
 .links{
  /* border: 1px solid #fff; */
  width: 100%;
  height: 100%;
- /* text-align: center; */
 }
 
 .nav ul{
@@ -59,9 +55,7 @@ body{
   float: left;
   /* border: 1px solid #000; */
   background-color: rgba(0, 0, 0, 0.3);
-  /* border-radius: 20px; */
   height: 70px;
-  /* justify-content: space-between; */
   color: #fff;
 }
 
@@ -77,12 +71,8 @@ body{
 .nav li a:hover{
   color: black;
   background-color: burlywood;
-  /* border-radius: 20px; */
   transition: 0.9s;
   
-}
-nav li:nth-child(1){
-  background-color: burlywood;
 }
 
 .welcome{
@@ -92,14 +82,29 @@ nav li:nth-child(1){
 }
 
 .welcome img{
-  border: 5px solid #fff;
+  border: 1px solid #fff;
   border-radius: 150px;
   width: 10%;
   height: 100px;
   position: absolute;
   margin-top: 100px;
   margin-left: 530px; 
+  animation-name: logo;
+  animation-duration: 4s;
 }
+
+@keyframes logo {
+   0%{
+    opacity: 0.1;
+  }
+   50%{
+    opacity: 0.5
+  }
+   100%{
+    opacity: 1;
+   }
+}
+
 
 .welcome h6{
   color:#fff;
@@ -111,7 +116,6 @@ nav li:nth-child(1){
   margin-top:   100px;
   font-family: 'Times New Roman', Times, serif;
   font-size: 25px;
-  /* text-align: center; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,17 +131,29 @@ nav li:nth-child(1){
   margin-top:   100px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 72px;
-  /* text-align: center; */
   display: flex;
   justify-content: center;
   align-items: center;
+  animation-name: welcome-heading;
+  animation-duration: 3s;
 }
+
+@keyframes welcome-heading {
+   0%{transform:translateX(-300%)
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+
+
 span{
   /* background: linear-gradient(90deg, orange, red, orange); */
   color: burlywood;
+  text-shadow: 2px 2px 5px brown;
 }
 
-/* color: 	rgb(92, 64, 51); */
 
 .welcome p{
   /* border: 1px solid #fff; */
@@ -163,36 +179,39 @@ span{
 
 .info{
   border: 1px solid #0f0;
-  /* background-color: burlywood; */
   height: 80vh;
   width: 100%;
-  /* background-image: url(./Images/Coffee\ ☕️.jpeg);
-  background-repeat: no-repeat;
-  background-position: center; */
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  /* position: relative; */
-  /* z-index: 10000; */
 }
 .info2{
-  /* border: 1px solid #000; */
+  border: 1px solid #000;
   height: 400px;
-  width: 85%;
+  width: 100%;
   padding: 35px;
-  /* font-size: 25px; */
-  /* background-image: url(./Images/bundo-kim-aGuyksW6l_Y-unsplash.jpg); */
-  /* background-position: center; */
-  /* background-size: cover; */
 }
 
 .info2 h2{
-  font-size: 64px;
+  font-size: 50px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 550;
   padding-bottom: 10px;
+  animation-name: heading;
+  animation-duration: 5s;
 }
 
+@keyframes heading {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 
 .info2 p{
   font-size: 18px;
@@ -214,11 +233,27 @@ span{
   height: 80vh;
   width: 100%;
 }
-
-.info3 h3{
-  font-size: 60px;
-  padding: 20px;
+.image{
+  border: 1px solid #000;
+  height: 100%;
+  width: 80%;
+  margin-left: 100px;
 }
+
+.image video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: blur(5px);
+  transition: 1s;
+}
+.image video:hover{
+  filter: blur(0px);
+}
+
+
+
+
 
 .pictures{
   width: 70%;
@@ -290,13 +325,6 @@ footer{
 }*/
 
 .nav-pic img{
-  /* background-image: url(./Images/bundo-kim-aGuyksW6l_Y-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  backface-visibility: visible;
-  z-index: 100000; */
-
   width: 100%;
   height: 30%;
   position: fixed;
@@ -342,7 +370,6 @@ footer{
   font-size: 50px;
   padding: 30px;
   text-align: center;
-  /* position: relative; */
 }
 
 .menu{
@@ -361,99 +388,48 @@ footer{
   border-radius: 20px;
 }
 
-
 .welcome2 h1{
   font-size: 120px;
 }
 
-
 footer{
   width: 100%;
   height: 200px;
-  border: 1px solid #000;
-  background-color: white;
+  /* border: 1px solid #000; */
+  background-color:rgb(196, 164, 132);
   display: flex;
-  justify-content:center;
 }
 
 footer img{
-  border: 1px solid #000;
-  border-radius: 80px;
-  width: 10%;
-  height: 85px;
+  /* border: 1px solid #000; */
+  background-color: #fff;
+  border-radius: 10000px;
+  width: 5%;
+  height: 55px;
   padding: 10px;
-  margin: 10px 0 0 10px;
+  margin-top: 40px;
+  color: #fff;
+
 }
 
-footer h4{
-  border: 1px solid #000;
-  height: 50px;
-  width: 20%;
-  /* margin-top: 30px; */
-  font-size: 30px;
+.information{
+  /* border: 1px solid #000; */
+  height: 80px;
+  width: 35%;
+  margin: 30px 30px 0px 0;
+  padding: 10px;
+}
+.information h3{
+  font-size: 35px;
 }
 
-footer p{
-  border: 1px solid #000;
-  height: 20px;
-  width: 20%;
+.information p{
+  font-size: 15px;
 }
+
 
 /* for contact */
-.nav{
-  /* border: 1px solid #fff; */
-  width: 100%;
-  height: 70px;
-  position: fixed;
-  z-index: 10000;
-  top: 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  /* border-radius: 20px; */
-}
 
-.links{
- /* border: 1px solid #fff; */
- width: 100%;
- height: 100%;
- /* text-align: center; */
-}
-
-.nav ul{
- list-style-type: none;
-}
-
-.nav li{
-  width: 33.3%;
-  float: left;
-  /* border: 1px solid #000; */
-  background-color: rgba(0, 0, 0, 0.3);
-  /* border-radius: 20px; */
-  height: 70px;
-  /* justify-content: space-between; */
-  color: #fff;
-}
-
-.nav li a{
-  display: block;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  padding: 25px;
-  font-size: 18px;
-}
-
-.nav li a:hover{
-  color: black;
-  background-color: burlywood;
-  /* border-radius: 20px; */
-  transition: 0.9s;
-  
-}
-nav li:nth-child(1){
-  background-color: burlywood;
-}
 .contact{
   border: 1px solid #000;
   height: 100vh;
