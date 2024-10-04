@@ -14,7 +14,7 @@ body{
 .banner{
   height: 100vh;
   width: 100%;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   background-color: #000;
   position: relative;
   display: flex;
@@ -83,7 +83,7 @@ body{
 }
 
 .welcome img{
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
   border-radius: 150px;
   width: 10%;
   height: 100px;
@@ -189,7 +189,7 @@ span{
 }
 
 .info{
-  border: 1px solid #0f0;
+  /* border: 1px solid #0f0; */
   height: 80vh;
   width: 100%;
   display: flex;
@@ -197,7 +197,7 @@ span{
   justify-content: center;
 }
 .info2{
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   height: 400px;
   width: 100%;
   padding: 35px;
@@ -240,12 +240,12 @@ span{
 }
 
 .info3{
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   height: 80vh;
   width: 100%;
 }
 .image{
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   height: 100%;
   width: 80%;
   margin-left: 100px;
@@ -269,7 +269,7 @@ span{
 
 .pictures{
   width: 70%;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   height: 100%;
   margin:0 120px;
 }
@@ -284,19 +284,19 @@ span{
 }
 
 .container{
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   height: 100%;
   width: 70%;
 }
 
 .container2{
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   height: 100%;
   width: 30%;
 }
 
 footer{
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   background-color: #000;
   height: 100px;
   width: 100%;
@@ -304,10 +304,10 @@ footer{
 
 /* Menu */
 
-.banner2{
- border: 1px solid #000;
+/* .banner2{ */
+ /* border: 1px solid #000; */
 
-}
+/* } */
 .video2 video{
   width: 10%;
   height: 300px;
@@ -364,13 +364,13 @@ footer{
    transition: 0.9s;
  } */
  .info-menu{
-   border: 1px solid #000;
+   /* border: 1px solid #000; */
    height: 100vh;
    width: 100%;
  }
 
 .info-menu h1{
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   width: 100%;
   font-size: 50px;
   padding: 30px;
@@ -388,7 +388,7 @@ footer{
 }
 
 .menu{
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   border-radius: 20px;
   width: 30%;
   height: 70%;
@@ -454,14 +454,14 @@ footer h3,footer p{
 /* for contact */
 
 .contact{
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   height: 100vh;
   width: 100%;
   
 }
 
 .contact h5{
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   height: 60px;
   width: 100%;
   font-size: 30px;
@@ -470,7 +470,7 @@ footer h3,footer p{
 }
 
 .contact p{
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   font-size: 18px;
 }
 /* .info-contact{
